@@ -71,7 +71,7 @@ function compiler (path) {
     .catch(err => console.error(err));
 }
 
-// compiler('./contract/contracts/PriorityQueue.sol' )
+// compiler('./contract/contracts/bin/PriorityQueue.sol' )
 compiler('./contract/contracts/temp.sol' )
 
 var path = './contract/contracts/'
