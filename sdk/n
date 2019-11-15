@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+./client getreceipt --hash $1 -a 117.50.97.136:8027

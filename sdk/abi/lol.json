@@ -1,0 +1,809 @@
+[{
+  "constant": false,
+  "inputs": [{
+    "name": "_blkNum",
+    "type": "uint256"
+  }],
+  "name": "reverseBlock",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getExitsLen",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_index",
+    "type": "uint256"
+  }],
+  "name": "getBalanceBackup",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getFeeBackup",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_blockNum",
+    "type": "uint256"
+  }],
+  "name": "getChildBlockSubmitter",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getCurDepositBlockNum",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getTotalBalance",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_operator",
+    "type": "address"
+  }, {
+    "name": "_refundAccount",
+    "type": "address"
+  }],
+  "name": "addOperatorRequest",
+  "outputs": [],
+  "payable": true,
+  "stateMutability": "payable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_id",
+    "type": "uint192"
+  }],
+  "name": "getChallengeTarget",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_user",
+    "type": "address"
+  }, {
+    "name": "_refundAccount",
+    "type": "address"
+  }],
+  "name": "userDepositRequest",
+  "outputs": [],
+  "payable": true,
+  "stateMutability": "payable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_index",
+    "type": "uint256"
+  }],
+  "name": "getChallengeId",
+  "outputs": [{
+    "name": "",
+    "type": "uint192"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_user",
+    "type": "address"
+  }],
+  "name": "getUserBalance",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_index",
+    "type": "uint256"
+  }],
+  "name": "getStaticNodes",
+  "outputs": [{
+    "name": "",
+    "type": "bytes32"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "getDepositBlockNum",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getOpsLen",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_operator",
+    "type": "address"
+  }],
+  "name": "execOperatorExit",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getDepositsLen",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_operator",
+    "type": "address"
+  }],
+  "name": "isOperatorExisted",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_challengeIndex",
+    "type": "uint256"
+  }, {
+    "name": "_recentTxs",
+    "type": "bytes"
+  }, {
+    "name": "_signatures",
+    "type": "bytes"
+  }, {
+    "name": "_indices",
+    "type": "bytes"
+  }, {
+    "name": "_preState",
+    "type": "bytes"
+  }, {
+    "name": "_inclusionProofs",
+    "type": "bytes"
+  }],
+  "name": "responseToBlockChallenge",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getCreatorDeposit",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "getExitType",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getCurExitBlockNum",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "removeExitRequest",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getContractBalance",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getTotalFee",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getTotalDepositBackup",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_user",
+    "type": "address"
+  }, {
+    "name": "_amount",
+    "type": "uint256"
+  }],
+  "name": "userExitRequest",
+  "outputs": [],
+  "payable": true,
+  "stateMutability": "payable",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "removeDepositRequest",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_user",
+    "type": "address"
+  }],
+  "name": "isUserExisted",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getOwner",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_blkNum",
+    "type": "uint256"
+  }, {
+    "name": "_balanceTreeRoot",
+    "type": "bytes32"
+  }, {
+    "name": "_txTreeRoot",
+    "type": "bytes32"
+  }, {
+    "name": "_accounts",
+    "type": "address[]"
+  }, {
+    "name": "_updatedBalances",
+    "type": "uint256[]"
+  }, {
+    "name": "_fee",
+    "type": "uint256"
+  }],
+  "name": "submitBlock",
+  "outputs": [],
+  "payable": true,
+  "stateMutability": "payable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_blockNum",
+    "type": "uint256"
+  }],
+  "name": "getChildBlockBalanceRootHash",
+  "outputs": [{
+    "name": "",
+    "type": "bytes32"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getLastChildBlockNum",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_user",
+    "type": "address"
+  }],
+  "name": "execUserExit",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getChallengeLen",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "getDepositType",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getNextChildBlockNum",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "getDepositAmount",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getTotalDeposit",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_blockNum",
+    "type": "uint256"
+  }],
+  "name": "getChildBlockTxRootHash",
+  "outputs": [{
+    "name": "",
+    "type": "bytes32"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "getExitBlockNum",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_operator",
+    "type": "address"
+  }, {
+    "name": "_amount",
+    "type": "uint256"
+  }],
+  "name": "feeExit",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "getExitAmount",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "getExitStatus",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_operator",
+    "type": "address"
+  }],
+  "name": "getOperatorFee",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_challengeTarget",
+    "type": "address"
+  }, {
+    "name": "_inspecBlock",
+    "type": "bytes"
+  }, {
+    "name": "_inspecBlockSignature",
+    "type": "bytes"
+  }, {
+    "name": "_inspecTxHash",
+    "type": "bytes32"
+  }, {
+    "name": "_inspecState",
+    "type": "bytes"
+  }, {
+    "name": "_indices",
+    "type": "bytes"
+  }, {
+    "name": "_inclusionProofs",
+    "type": "bytes"
+  }],
+  "name": "challengeSubmittedBlock",
+  "outputs": [],
+  "payable": true,
+  "stateMutability": "payable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "getChildChainName",
+  "outputs": [{
+    "name": "",
+    "type": "bytes32"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_operator",
+    "type": "address"
+  }],
+  "name": "operatorExitRequest",
+  "outputs": [],
+  "payable": true,
+  "stateMutability": "payable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_operator",
+    "type": "address"
+  }],
+  "name": "getOperatorBalance",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_index",
+    "type": "uint256"
+  }],
+  "name": "getAccountBackup",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+    "name": "_subchainName",
+    "type": "bytes32"
+  }, {
+    "name": "_genesisInfo",
+    "type": "bytes32[]"
+  }, {
+    "name": "_staticNodes",
+    "type": "bytes32[]"
+  }, {
+    "name": "_creatorDeposit",
+    "type": "uint256"
+  }, {
+    "name": "_ops",
+    "type": "address[]"
+  }, {
+    "name": "_opsDeposits",
+    "type": "uint256[]"
+  }, {
+    "name": "_refundAccounts",
+    "type": "address[]"
+  }],
+  "payable": true,
+  "stateMutability": "payable",
+  "type": "constructor"
+}, {
+  "anonymous": false,
+  "inputs": [{
+    "indexed": false,
+    "name": "account",
+    "type": "address"
+  }, {
+    "indexed": false,
+    "name": "depositBlockNum",
+    "type": "uint256"
+  }, {
+    "indexed": false,
+    "name": "amount",
+    "type": "uint256"
+  }],
+  "name": "AddOperatorRequest",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+    "indexed": false,
+    "name": "account",
+    "type": "address"
+  }, {
+    "indexed": false,
+    "name": "depositBlockNum",
+    "type": "uint256"
+  }, {
+    "indexed": false,
+    "name": "amount",
+    "type": "uint256"
+  }],
+  "name": "UserDepositRequest",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+    "indexed": false,
+    "name": "account",
+    "type": "address"
+  }, {
+    "indexed": false,
+    "name": "exitBlockNum",
+    "type": "uint256"
+  }, {
+    "indexed": false,
+    "name": "amount",
+    "type": "uint256"
+  }],
+  "name": "OperatorExitRequest",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+    "indexed": false,
+    "name": "account",
+    "type": "address"
+  }, {
+    "indexed": false,
+    "name": "exitBlockNum",
+    "type": "uint256"
+  }, {
+    "indexed": false,
+    "name": "amount",
+    "type": "uint256"
+  }],
+  "name": "UserExitRequest",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+    "indexed": false,
+    "name": "blkNum",
+    "type": "uint256"
+  }, {
+    "indexed": false,
+    "name": "timestamp",
+    "type": "uint256"
+  }],
+  "name": "BlockSubmitted",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+    "indexed": false,
+    "name": "blkNum",
+    "type": "uint256"
+  }],
+  "name": "BlockReversed",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+    "indexed": false,
+    "name": "challengeTarget",
+    "type": "address"
+  }, {
+    "indexed": false,
+    "name": "blkNum",
+    "type": "uint256"
+  }],
+  "name": "BlockChallenge",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+    "indexed": false,
+    "name": "challengeIndex",
+    "type": "uint256"
+  }],
+  "name": "RemoveBlockChallenge",
+  "type": "event"
+}]

@@ -1,0 +1,23 @@
+{
+  "name": "auto-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "solc": "^0.5.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seeleteam/auto-deploy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seeleteam/auto-deploy/issues"
+  },
+  "homepage": "https://github.com/seeleteam/auto-deploy#readme"
+}
