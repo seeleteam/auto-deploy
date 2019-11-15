@@ -12,7 +12,7 @@ class seeleOFFLINE {
   
   initTx(pubkey, to, amount, payload){
     //verify pubkey, to, amount, payload?
-    return {z
+    return {
           "Type":         0,
           "From":         pubkey,
           "To":           to,

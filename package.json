@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "solc": "^0.5.13"
+    "keccak": "^2.0.0",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "rlp": "^2.2.4",
+    "secp256k1": "^3.7.1",
+    "solc": "^0.5.13",
+    "web3": "^1.2.4",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {},
   "scripts": {
